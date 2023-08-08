@@ -1,0 +1,50 @@
+.search-container{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1E1D23;
+    width: 396px;
+    height: 48px;
+    margin-top: 25px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.search{
+    background-color: #1E1D23;
+    width: 346px;
+    border: none;
+    color: white;
+    &::placeholder {
+        font-size: 16px;
+        width: 138px;
+        height: 22px; 
+        color: #6B6A6E;
+        margin-left: 10px;
+        float:left;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.search-icon{
+    width: 24px;
+
+    margin-left:16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+ 
+}
+
+.slider-icon {
+    border-radius: 1.45px;
+    width: 17px;
+    height: 17px;
+    margin-top: 12px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    transform: rotate(90deg);
+    background-color: transparent; /* Add this line to make the icon transparent */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 0px rgba(255, 255, 255, 0.5); /* Simulated border with a gap */
+}
