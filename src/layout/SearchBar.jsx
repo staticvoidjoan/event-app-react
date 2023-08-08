@@ -8,7 +8,7 @@ const SearchBar = () => {
        </div>
         <input
           type="text"
-          placeholder="Search for events..."
+          placeholder="Search all events..."
           className="search"
         ></input>
         <div className="slider-icon">

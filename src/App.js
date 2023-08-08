@@ -1,14 +1,18 @@
 
 import './App.css';
+import SuggestedCard from './components/SuggestedCard';
 
 import NavBar from "./layout/NavBar" 
-import SearchBar from './layout/SearchBar';
+import Home from './Pages/Home/Home';
+
+
 
 function App() {
   return (
     <>
     <NavBar />
-    <SearchBar />
+    <Home />
+   
     </>
   );
 }

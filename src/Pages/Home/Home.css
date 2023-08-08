@@ -1,0 +1,28 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.suggested-home-tittle{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 16px;
+
+
+}
+
+.suggestion-row{
+    margin-left: 16px;
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x : contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+
+}
+
