@@ -1,49 +1,54 @@
-.home-container{
-    display: flex;
-    flex-direction: column;
+.home-container {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.suggested-home-tittle{
-    font-size: 18px;
-    color: #fff;
-    margin-left: 16px;
-
-
+.suggested-home-tittle {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 16px;
 }
 
-.suggestion-row{
-    margin-left: 16px;
-    display: grid;
-    grid-auto-flow: column;
-    scroll-behavior: auto;
-    gap: 1.2rem;
-    overflow-y: auto;
-    overscroll-behavior-x : contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    scrollbar-color: transparent;
-
+.suggestion-row {
+  margin-left: 16px;
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+  margin-right: 16px;
 }
 
-.event-column{
-    display: grid;
-    grid-auto-flow: row;
-    scroll-behavior: auto;
-    gap: 1.2rem;
-    overflow-x: auto;
-    overscroll-behavior-y : contain;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: none;
-    scrollbar-color: transparent;
+.button-row {
+  margin-left: 16px;
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 0.75rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
 }
 
-.total-events{
-    font-size: 14px;
-    color: #CCCCCC;
-    text-align: left;
-    margin-left: 16px;
+.event-column {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1.2rem;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
-
-
+.total-events {
+  font-size: 14px;
+  color: #cccccc;
+  text-align: left;
+  margin-left: 16px;
+}

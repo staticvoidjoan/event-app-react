@@ -11,13 +11,13 @@
   justify-content: space-between;
   border-radius: 5px;
   color: #fff;
-  margin-left: 16px;
+
   transition: transform .2s ;
-  margin-left: 16px;
 }
 
 .event-card-container:hover{
   transform: scale(1.05);
+  backdrop-filter: none;
 }
 
 .info-box {
