@@ -26,3 +26,24 @@
 
 }
 
+.event-column{
+    display: grid;
+    grid-auto-flow: row;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overscroll-behavior-y : contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+}
+
+.total-events{
+    font-size: 14px;
+    color: #CCCCCC;
+    text-align: left;
+    margin-left: 16px;
+}
+
+
+

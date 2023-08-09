@@ -46,5 +46,5 @@
     margin-bottom: 12px;
     transform: rotate(90deg);
     background-color: transparent; /* Add this line to make the icon transparent */
-    box-shadow: 0 0 0 2px #fff, 0 0 0 0px rgba(255, 255, 255, 0.5); /* Simulated border with a gap */
+   
 }

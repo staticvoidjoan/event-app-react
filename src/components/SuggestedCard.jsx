@@ -6,7 +6,7 @@ const SuggestedCard = ({ date, time, title, backgroundpath }) => {
   };
   return (
     <div className="suggestion-card-container" style={cardStyle}>
-      <div>
+      <div className="suggestion-text"> 
         <div className="suggestion-date">
           <h6>
             {date}-{time}

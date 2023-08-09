@@ -1,0 +1,26 @@
+.AllButton{
+    background-color: #1E1D23;
+    border: 0px;
+    color: #fff;
+    height: 34px;
+    border-radius: 5px;
+
+}
+
+.AllButton:hover{
+    background-color: #026CDF;
+    border: 0px;
+    color: #fff;
+}
+
+.AllButton:onClick{
+    background-color: #026CDF;
+    border: 0px;
+    color: #fff;
+}
+
+.AllButton:active{
+    background-color: #026CDF;
+    border: 0px;
+    color: #fff;
+}
