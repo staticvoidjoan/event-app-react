@@ -32,14 +32,11 @@ const Event = () => {
           </div>
           
         </div>
-        
-        <div className="event-info">
-       
 
-          <div className="event-location"></div>
-          <div className="tickets"></div>
         </div>
-      </div>
+        
+        <div className="event-middle-info">
+
       <div className="event-title-price">
         <div>
           <h3>Dave</h3>
@@ -74,7 +71,7 @@ const Event = () => {
               <p>5 tickets</p>
             </div>
           </div>
-
+      </div>
         </div>
       <div className="event-page-info">
         <h4 className="event-about-title">About Event</h4>
