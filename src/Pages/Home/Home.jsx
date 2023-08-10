@@ -17,7 +17,7 @@ const Home = () => {
   const navigate = useNavigate();
   let singleClick = true;
 
-  const handleEventCardClick = (index) => {
+  const handleEventCardClick = () => {
       setTimeout(() => {
         navigate(`/event`);
       }, 150);

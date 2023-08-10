@@ -1,6 +1,7 @@
 import background from "../../assets/concert1.jpg";
 import background2 from "../../assets/concert2.jpeg";
 import background3 from "../../assets/concer3.jpeg";
+import background4 from "../../assets/img1.jpg"
 
 export const allButtonsData = ["All", "Free", "Limited", "Concert", "Festival"];
 export const suggestedCardsData = [
@@ -21,6 +22,12 @@ export const suggestedCardsData = [
       time: "19-00",
       title: "Moonlit Melodies Concert",
       backgroundpath: background3,
+    },
+    {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
     },
    
   ];
