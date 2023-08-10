@@ -9,7 +9,7 @@
 .event-page-container {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: column-reverse;
   position: relative;
 }
 
@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: flex-end;
   position: absolute;
-  z-index: 1;
+
 }
 .event-container {
   display: flex;
@@ -49,6 +49,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 24px;
+
 }
 
 .back-icon {
@@ -61,16 +62,7 @@
   margin-top: 17px;
 }
 
-.event-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, transparent, transparent 80%, black);
-  pointer-events: none; /* Allows click events to pass through to underlying elements */
-  z-index: 2;
-}
+
 
 /* Event title end */
 
@@ -82,7 +74,7 @@
   align-items: center;
   flex-wrap: nowrap;
   margin-left: 16px;
-  margin-right: 17px;
+  margin-right: 24px;
 }
 .event-price-box {
   display: flex;
@@ -134,7 +126,7 @@
 .event-location {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-left: 16px;
   margin-right: 156px;
   text-align: left;
@@ -226,7 +218,12 @@
   align-items: center;
   margin-bottom: 32px;
   margin-top: 55px;
+  &:hover {
+   background-color: #0d5db3;
 }
+}
+
+
 
 .ticket-icon {
   margin-right: 8px;
