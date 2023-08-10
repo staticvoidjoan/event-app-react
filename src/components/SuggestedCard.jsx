@@ -5,7 +5,8 @@ const SuggestedCard = ({ date, time, title, backgroundpath }) => {
     backgroundImage: `url(${backgroundpath})`,
   };
   return (
-    <div className="suggestion-card-container" style={cardStyle}>
+    <div className="suggestion-card-container" >
+      <div className="suggestion-card-background " style={cardStyle}></div>
       <div className="suggestion-text"> 
         <div className="suggestion-date">
           <h6>
@@ -13,7 +14,7 @@ const SuggestedCard = ({ date, time, title, backgroundpath }) => {
           </h6>
         </div>
         <div className="suggestion-title">
-          <h3>{title}</h3>
+          <p >{title}</p>
         </div>
       </div>
       <button className="suggestion-button">Tickets</button>

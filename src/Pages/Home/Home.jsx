@@ -28,7 +28,7 @@ const Home = () => {
       <SearchBar />
       <div className="home-container">
         <div className="suggested-home-tittle">
-          <h3>Suggested</h3>
+          <h3 className="home-page-text">Suggested</h3>
         </div>
         <div className="suggestion-row">
           {suggestedCardsData.map((card, index) => (
@@ -42,7 +42,7 @@ const Home = () => {
           ))}
         </div>
         <div className="suggested-home-tittle">
-          <h3>Upcoming Events</h3>
+          <h3 className="home-page-text">Upcoming Events</h3>
         </div>
         <div className="button-row">
           {allButtonsData.map((buttonName, index) => (

@@ -32,6 +32,8 @@
   
 
 .info-text {
+ 
+   line-height: 22px;
   margin-left: 16px;
 }
 
@@ -41,6 +43,7 @@
     margin-top: 10px;
     border-radius: 23px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -51,6 +54,21 @@
     width: 46px;
     height: 46px;
   }
+
+.event-date-day{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.event-date-month{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+}
+
 
   .price-box {
     z-index: 1;
@@ -65,7 +83,23 @@
     width: 76px;
     background-color: #fff;
     color: #2c2c2c;
-    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    font-size: 14px;
+    line-height: 13px;
   }
   
+
+  .event-card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: medium;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .event-card-info {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }

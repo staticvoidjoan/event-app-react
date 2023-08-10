@@ -12,16 +12,25 @@ import EventTicket from "./EventTicket";
 import EventNavHeader from "./EventNavHeader";
 import EventInfo from "./EventInfo";
 import { eventinfodata } from "./EventDummyData";
+
 const Event = () => {
   const cardStyle = {
     backgroundImage: `url(${background})`,
+  };
+
+const HandleEventBackClick = () => {
+    let navigate = useNavigate();
+    navigate("/");
   };
 
   return (
     <div className="event-container">
       <div className="event-page-container">
         <div className="event-background" style={cardStyle}>
+          <div onClick={HandleEventBackClick}>
           <EventNavHeader title={"Dave"} />
+
+          </div>
         </div>
         <div className="event-middle-info">
           <EventHeader title={"Dave"} price={"45.00"} />

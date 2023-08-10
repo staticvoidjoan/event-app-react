@@ -36,8 +36,9 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: baseline;
   margin-left: 16px;
+
 }
 
 .back-icon-container {
@@ -75,7 +76,16 @@
   flex-wrap: nowrap;
   margin-left: 16px;
   margin-right: 24px;
+  
 }
+
+.event-title-style{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+}
+
 .event-price-box {
   display: flex;
   align-items: center;
@@ -87,6 +97,10 @@
   color: #2c2c2c;
   font-size: 14px;
   font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
 }
 
 /* Event price end */
@@ -99,6 +113,20 @@
   margin-left: 16px;
   margin-right: 156px;
 }
+.calendar-month{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.calendar-day{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
 .calendar-icon {
   background: rgba(255, 255, 255, 0.1);
   width: 42px;
@@ -110,6 +138,7 @@
   align-items: center;
   margin-top: 24px;
   margin-right: 24px;
+  margin-top: 0px;
 }
 .calendar-divider {
   margin: 0px;
@@ -146,7 +175,10 @@
 
 .location-info {
   margin-top: 18px;
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
   white-space: nowrap;
 
   text-overflow: ellipsis;
@@ -178,7 +210,10 @@
 
 .ticket-info {
   margin-top: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
   font-size: 16px;
+  line-height: 22px;
   white-space: nowrap;
 
   text-overflow: ellipsis;
@@ -193,9 +228,20 @@
 }
 
 .event-about-title {
-  position: relative;
-  top: 48px;
-  margin-bottom: 38px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.event-info-describtion{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
 }
 
 .event-page-info {
