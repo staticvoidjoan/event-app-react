@@ -25,6 +25,9 @@
     &:focus{
         outline: none;
     }
+    &:focus::placeholder{
+       color: transparent;
+    }
 }
 
 .search-icon{

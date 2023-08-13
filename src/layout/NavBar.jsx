@@ -9,7 +9,7 @@ const NavBar = () => {
         <header>
         <div className='navbar-container'>
             <div className='nav-title'>
-               <Bold20px27px text={"AppName"} />
+               <Bold20px27px text={"Eventio"} />
                
             </div>
             <div className='nav-user'>

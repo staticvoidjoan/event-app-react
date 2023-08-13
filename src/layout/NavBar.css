@@ -25,6 +25,8 @@
   width: 29px;
   height: 29px;
   margin-top: 24px;
+  object-fit: cover;
+  object-position: center -2px;
 }
 .nav-user {
   display: flex;
