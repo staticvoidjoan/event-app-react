@@ -12,94 +12,151 @@
   border-radius: 5px;
   color: #fff;
 
-  transition: transform .2s ;
 }
 
-.event-card-container:hover{
+
+.event-color{
+  transition: transform 0.2s;
+  
+}
+.event-color:hover{
   transform: scale(1.05);
   backdrop-filter: none;
 }
 
+.event-card-elements {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+.event-bg {
+  width: 396px;
+  height: 328px;
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+
 .info-box {
-    /* From https://css.glass */
-    background-color: linear-gradient(to bottom, rgba(44, 44, 44, 0.4), rgba(114, 114, 114, 0));
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(5px);
-    width: 396px;
-    height: 110px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  }
-  
+  /* From https://css.glass */
+  background-color: linear-gradient(
+    to bottom,
+    rgba(44, 44, 44, 0.4),
+    rgba(114, 114, 114, 0)
+  );
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  height: 110px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
 
 .info-text {
- 
-   line-height: 22px;
+  margin-top: 28px;
   margin-left: 16px;
 }
 
 .event-card-date {
-    margin-left: 334px;
-    margin-right: 46px;
-    margin-top: 10px;
-    border-radius: 23px;
+  margin-left: 334px;
+  margin-right: 46px;
+  margin-top: 10px;
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: rgba(
+    2,
+    0,
+    36,
+    0.5
+  ); /* Adjust the alpha value (0.5) for transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 46px;
+  height: 46px;
+}
+
+.date-divider{
+  margin: 0;
+  background-color: transparent;
+  border: none;
+
+}
+
+.price-box {
+  z-index: 1;
+  position: absolute;
+  top: 202px;
+  right: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+  height: 36px;
+  width: 76px;
+  background-color: #fff;
+  color: #2c2c2c;
+}
+
+@media (min-width: 1000px) {
+  .event-color {
+    background-color: #1e1d23;
+  }
+  .event-card-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    background: rgba(2, 0, 36, 0.5); /* Adjust the alpha value (0.5) for transparency */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    width: 46px;
-    height: 46px;
+    width: 100%;
+    height: 100%;
+    background-size: 404px;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+    position: relative;
   }
 
-.event-date-day{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 13px;
-}
+  .event-bg {
+    position: absolute;
+    left: 0;
+    width: 404px;
+    height: 100%;
+    background-position: left top -50px;
+    mask-image: linear-gradient(to right, black, transparent 95%);
+  }
 
-.event-date-month{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 13px;
-}
-
-
-  .price-box {
-    z-index: 1;
-    position: absolute; 
-    top: 202px;
-    right: 33px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 23px;
+  .info-box {
+    position: relative;
+    left: 351px;
+    right: 443px;
+    bottom:56px;
+    background-color: initial;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+  }
+  .event-card-date{
+    position: relative;
+    top: 85px;
+    left: 351px;
+    margin-left: 0;
+    width: 96px;
     height: 36px;
-    width: 76px;
-    background-color: #fff;
-    color: #2c2c2c;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 13px;
+    flex-direction: row;
+    
   }
-  
+  .date-divider{
+    margin: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: transparent;
+    border: none;
 
-  .event-card-title {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: medium;
-    font-size: 18px;
-    line-height: 24px;
   }
-  
-  .event-card-info {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
+  .price-box {
+    top: 53px;
+    right: 32px; 
+
   }
+}

@@ -17,9 +17,9 @@ const Event = () => {
   const cardStyle = {
     backgroundImage: `url(${background})`,
   };
+  const navigate = useNavigate();
 
 const HandleEventBackClick = () => {
-    let navigate = useNavigate();
     navigate("/");
   };
 
@@ -33,7 +33,11 @@ const HandleEventBackClick = () => {
           </div>
         </div>
         <div className="event-middle-info">
+      
           <EventHeader title={"Dave"} price={"45.00"} />
+    
+        <div className="extra-info">
+
           <EventCalendar
             date={"02"}
             month={"September"}
@@ -42,8 +46,10 @@ const HandleEventBackClick = () => {
           />
           <EventLocation city={"Amterdam"} country={"Netherlands"} />
           <EventTicket ticketammount={"5"} />
+          <div></div>
         </div>
       </div>
+          </div>
       <EventInfo title={eventinfodata.title} info={eventinfodata.info} />
     </div>
   );

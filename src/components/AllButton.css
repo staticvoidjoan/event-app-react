@@ -1,26 +1,25 @@
 .AllButton{
     background-color: #1E1D23;
     border: 0px;
-    color: #fff;
+    color: #6B6A6E;
     height: 34px;
     border-radius: 5px;
+    cursor: pointer;
 
 }
 
-.AllButton:hover{
+.AllButton.selected {
     background-color: #026CDF;
     border: 0px;
     color: #fff;
+    outline: none;
 }
 
-.AllButton:onClick{
+.AllButton:hover,
+.AllButton:focus,
+.AllButton:active {
     background-color: #026CDF;
     border: 0px;
     color: #fff;
-}
-
-.AllButton:active{
-    background-color: #026CDF;
-    border: 0px;
-    color: #fff;
+    outline: none;
 }

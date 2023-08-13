@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
@@ -7,6 +7,10 @@ import SearchBar from "../../layout/SearchBar";
 import SuggestedCard from "../../components/SuggestedCard";
 import AllButton from "../../components/AllButton";
 import EventCard from "../../components/EventCard";
+
+//Text Components
+import Regular18px24px from "../../components/Text Components/regular18px24px";
+import Regular14px19px from "../../components/Text Components/regular14px19px";
 import {
   allButtonsData,
   suggestedCardsData,
@@ -17,18 +21,29 @@ const Home = () => {
   const navigate = useNavigate();
   let singleClick = true;
 
-  const handleEventCardClick = () => {
-      setTimeout(() => {
-        navigate(`/event`);
-      }, 150);
+  const [selectedButton, setSelectedButton] = useState(allButtonsData[0]);
+  useEffect(()=>{
+    console.log("selectedButton:", selectedButton);
+  },[selectedButton])
 
+
+  const handleEventCardClick = () => {
+    setTimeout(() => {
+      navigate(`/event`);
+    }, 150);
   };
   return (
     <>
+    <div className="search-bar-container">
       <SearchBar />
+
+    </div>
       <div className="home-container">
         <div className="suggested-home-tittle">
-          <h3 className="home-page-text">Suggested</h3>
+          <div style={{marginBottom:"16px", marginTop:"16px"}}>
+            <Regular18px24px text={"Suggested"} />
+          </div>
+          
         </div>
         <div className="suggestion-row">
           {suggestedCardsData.map((card, index) => (
@@ -42,29 +57,32 @@ const Home = () => {
           ))}
         </div>
         <div className="suggested-home-tittle">
-          <h3 className="home-page-text">Upcoming Events</h3>
+        <div style={{marginBottom:"16px", marginTop:"16px"}}>
+            <Regular18px24px text={"Upcoming Events"} />
+          </div>
         </div>
         <div className="button-row">
           {allButtonsData.map((buttonName, index) => (
-            <AllButton buttonName={buttonName} key={index} />
+            <AllButton  buttonName={buttonName}
+            key={index}
+            selected={selectedButton === buttonName}
+            onClick={() => setSelectedButton(buttonName)}/>
           ))}
         </div>
         <div className="total-events">
-          <p>Total Events: {eventNumber}</p>
+          <Regular14px19px text={`Total events: ${eventNumber}`}/>
         </div>
         <div className="event-column" onClick={() => handleEventCardClick()}>
           {eventCardsData.map((card, index) => (
-          
-           <EventCard
-             key={index}
-             date={card.date}
-             month={card.month}
-             title={card.title}
-             info={card.info}
-             price={card.price}
-             backgroundpath={card.backgroundpath}
-           />
-       
+            <EventCard
+              key={index}
+              date={card.date}
+              month={card.month}
+              title={card.title}
+              info={card.info}
+              price={card.price}
+              backgroundpath={card.backgroundpath}
+            />
           ))}
         </div>
       </div>

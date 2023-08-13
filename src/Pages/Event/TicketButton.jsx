@@ -1,6 +1,6 @@
 import React from 'react'
 import ticketico from "../../assets/ticket.svg";
-
+import Regular16px22px from '../../components/Text Components/regular16px22px';
 export default function TicketButton() {
   return (
     <button className="tickets-button">
@@ -13,7 +13,7 @@ export default function TicketButton() {
       />
     </div>
     <div className="ticket-text">
-      <p>Tickets</p>
+      <Regular16px22px text={"Tickets"}/>
     </div>
   </button>
   )

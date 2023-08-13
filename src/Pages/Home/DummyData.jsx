@@ -28,6 +28,51 @@ export const suggestedCardsData = [
       time: "23-00",
       title: "Fireflies Concert",
       backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
+    }, {
+      date: "19 Nov",
+      time: "23-00",
+      title: "Fireflies Concert",
+      backgroundpath: background4,
     },
    
   ];

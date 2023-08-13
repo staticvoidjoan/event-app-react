@@ -37,13 +37,29 @@
 }
 
 .slider-icon {
-    border-radius: 1.45px;
-    width: 17px;
-    height: 17px;
+    margin-left:16px;
     margin-top: 12px;
-    margin-right: 16px;
     margin-bottom: 12px;
-    transform: rotate(90deg);
-    background-color: transparent; /* Add this line to make the icon transparent */
+    margin-right: 16px;
+    
    
+}
+
+@media (min-width: 600px) {
+    .search-container{
+      width:565px;
+        align-items: center;
+    }
+    .search{
+        width: 100%;
+    }
+    .search-icon{
+        width: 40px;
+    }
+    .slider-icon{
+        height: 22px;
+        width: 40px;
+        margin: 0;
+    }
+    
 }

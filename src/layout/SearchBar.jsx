@@ -11,6 +11,7 @@ const SearchBar = () => {
           placeholder="Search all events..."
           className="search"
         ></input>
+        
         <div className="slider-icon">
         <i class="fa-solid fa-sliders" style={{color: "#ffffff"}}></i>
         </div>

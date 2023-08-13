@@ -1,5 +1,7 @@
 import React from "react";
 import "./SuggestedCard.css";
+import Regular14px19px from "../components/Text Components/regular14px19px"
+import Bold18px24px from "../components/Text Components/bold18px24px"
 const SuggestedCard = ({ date, time, title, backgroundpath }) => {
   const cardStyle = {
     backgroundImage: `url(${backgroundpath})`,
@@ -9,12 +11,12 @@ const SuggestedCard = ({ date, time, title, backgroundpath }) => {
       <div className="suggestion-card-background " style={cardStyle}></div>
       <div className="suggestion-text"> 
         <div className="suggestion-date">
-          <h6>
-            {date}-{time}
-          </h6>
+          <Regular14px19px text={`${date}-${time}`} />
+            
+        
         </div>
         <div className="suggestion-title">
-          <p >{title}</p>
+          <Bold18px24px text={title}/>
         </div>
       </div>
       <button className="suggestion-button">Tickets</button>
