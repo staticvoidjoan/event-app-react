@@ -41,7 +41,7 @@ const HandleEventBackClick = () => {
           <EventCalendar
             date={"02"}
             month={"September"}
-            time={"10:00"}
+            time={"10:00 PM"}
             weekday={"Thursday"}
           />
           <EventLocation city={"Amterdam"} country={"Netherlands"} />

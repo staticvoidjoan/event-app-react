@@ -11,14 +11,12 @@
   justify-content: space-between;
   border-radius: 5px;
   color: #fff;
-
 }
-
 
 .event-color{
-  transition: transform 0.2s;
-  
+  transition: transform 0.2s;  
 }
+
 .event-color:hover{
   transform: scale(1.05);
   backdrop-filter: none;

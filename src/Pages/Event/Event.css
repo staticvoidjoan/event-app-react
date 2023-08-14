@@ -139,6 +139,10 @@
   margin-right: 24px;
 }
 
+.event-date-month{
+  color: #CCCCCC;
+}
+
 .calendar-month {
   text-align: left;
 }
@@ -299,6 +303,9 @@
  
 }
 
+.event-date-month{
+
+}
 
 @media (min-width: 1000px) {
   .event-title-price{
@@ -306,7 +313,6 @@
   margin-right: 190px;
   margin-left: 190px;
   }
-
   .event-middle-info{
     display: flex;
     height: 200px;
@@ -355,5 +361,44 @@
     margin: 0px;
     box-shadow: 0px 3px 6px rgba(14, 0, 20, 0.1);
   }
+  
+  .event-date-weekday{
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+
+  .calendar-month{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .event-date-month{
+    white-space: nowrap;     
+    overflow: hidden;        
+    text-overflow: ellipsis;  
+    max-width: 1.5em;   
+    color: #FFFFFF;  
+  }
+  .event-date-day{
+    margin-right: 8px;
+  }
+
+  .calendar-day{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.calendar-divider{
+  rotate: calc(90deg);
+  height: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.event-calendar{
+  align-items: center;
+}
+
 
 }
