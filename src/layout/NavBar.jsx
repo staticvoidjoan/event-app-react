@@ -10,6 +10,8 @@ const NavBar = () => {
         <div className='navbar-container'>
             <div className='nav-title'>
                <Bold20px27px text={"Eventio"} />
+               {/* To do  */}
+               {/* <Text  label={"Eventio"} size={"h1"} weight={"bold"}  color={"fff"}/> */}
                
             </div>
             <div className='nav-user'>

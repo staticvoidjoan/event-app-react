@@ -266,7 +266,7 @@
   margin-bottom: 12px;
 }
 
-
+/* 
 @media (min-width: 600px){
   .event-middle-info{
     width: 100%;
@@ -282,7 +282,7 @@
 
   }
 
-}
+} */
 
 
 
@@ -303,9 +303,7 @@
  
 }
 
-.event-date-month{
 
-}
 
 @media (min-width: 1000px) {
   .event-title-price{
