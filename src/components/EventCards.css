@@ -157,4 +157,7 @@
     right: 32px; 
 
   }
+  .event-date-month{
+    overflow: show;
+  }
 }

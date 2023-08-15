@@ -1,6 +1,5 @@
 import React from "react";
 import background from "../../assets/concert2.jpeg";
-import ticketico from "../../assets/ticket.svg";
 
 import "./Event.css";
 

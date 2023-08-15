@@ -1,11 +1,10 @@
 import React from 'react';
-
-const Text = (label,size,weight,color) => {
+import "./Text.css"
+const Text = ({label,size,weight,color, lineheight}) => {
+    const style = `family ${size} ${weight} ${color} ${lineheight}`
     
-        // <Text  label={"Eventio"} 
-    //    size={"h1"} weight={"bold"}  color={"fff"}/>
     return (
-        <div>
+        <div className={style}> 
             {label}
         </div>
     );

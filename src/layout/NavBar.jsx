@@ -1,30 +1,34 @@
-import React from 'react';
-import "./NavBar.css"
-import profilepic from "../assets/profilepic.jpg"
-import Bold20px27px from "../components/Text Components/bold20px27px"
-import Normal16px22px from "../components/Text Components/regular16px22px"
+import React from "react";
+import "./NavBar.css";
+import profilepic from "../assets/profilepic.jpg";
+import Text from "../components/Text Components/Text";
 const NavBar = () => {
-
-    return(
-        <header>
-        <div className='navbar-container'>
-            <div className='nav-title'>
-               <Bold20px27px text={"Eventio"} />
-               {/* To do  */}
-               {/* <Text  label={"Eventio"} size={"h1"} weight={"bold"}  color={"fff"}/> */}
-               
-            </div>
-            <div className='nav-user'>
-                <div className="profile-name">
-                <Normal16px22px text={"Masha"}/>
-
-                </div>
-                <img src={profilepic} alt="profile pic"  className='profile-pic'/>
-            </div>
+  return (
+    <header>
+      <div className="navbar-container">
+        <div className="nav-title">
+          <Text
+            label={"EventApp"}
+            weight={"bold"}
+            size={"h4"}
+            lineheight={"l27"}
+          />
         </div>
-        <hr className='nav-divider'/>
-        </header>
-    )
-}
+        <div className="nav-user">
+          <div className="profile-name">
+            <Text
+              label={"Masha"}
+              weight={"regular"}
+              size={"h2"}
+              lineheight={"l22"}
+            />
+          </div>
+          <img src={profilepic} alt="profile pic" className="profile-pic" />
+        </div>
+      </div>
+      <hr className="nav-divider" />
+    </header>
+  );
+};
 
 export default NavBar;

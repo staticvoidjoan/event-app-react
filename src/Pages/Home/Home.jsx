@@ -9,8 +9,7 @@ import AllButton from "../../components/AllButton";
 import EventCard from "../../components/EventCard";
 
 //Text Components
-import Regular18px24px from "../../components/Text Components/regular18px24px";
-import Regular14px19px from "../../components/Text Components/regular14px19px";
+import Text from "../../components/Text Components/Text";
 import {
   allButtonsData,
   suggestedCardsData,
@@ -41,7 +40,7 @@ const Home = () => {
       <div className="home-container">
         <div className="suggested-home-tittle">
           <div style={{marginBottom:"16px", marginTop:"16px"}}>
-            <Regular18px24px text={"Suggested"} />
+            <Text label={"Suggested"} size={"h3"} weight={"regular"} lineheight={"l24"}/>
           </div>
           
         </div>
@@ -58,7 +57,7 @@ const Home = () => {
         </div>
         <div className="suggested-home-tittle">
         <div style={{marginBottom:"16px", marginTop:"16px"}}>
-            <Regular18px24px text={"Upcoming Events"} />
+            <Text label={"Upcoming Events"} size={"h3"} weight={"regular"} lineheight={"l24"} />
           </div>
         </div>
         <div className="button-row">
@@ -70,7 +69,7 @@ const Home = () => {
           ))}
         </div>
         <div className="total-events">
-          <Regular14px19px text={`Total events: ${eventNumber}`}/>
+          <Text label={`Total events: ${eventNumber}`} size={"h1"} weight={"regular"} lineheight={"l19"} color={"gray"} />
         </div>
         <div className="event-column" onClick={() => handleEventCardClick()}>
           {eventCardsData.map((card, index) => (

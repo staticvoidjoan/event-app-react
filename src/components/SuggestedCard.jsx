@@ -1,26 +1,34 @@
 import React from "react";
 import "./SuggestedCard.css";
-import Regular14px19px from "../components/Text Components/regular14px19px"
-import Bold18px24px from "../components/Text Components/bold18px24px"
-import Regular16px22px from "./Text Components/regular16px22px";
+import Text from "./Text Components/Text";
 const SuggestedCard = ({ date, time, title, backgroundpath }) => {
   const cardStyle = {
     backgroundImage: `url(${backgroundpath})`,
   };
   return (
-    <div className="suggestion-card-container" >
+    <div className="suggestion-card-container">
       <div className="suggestion-card-background " style={cardStyle}></div>
-      <div className="suggestion-text"> 
+      <div className="suggestion-text">
         <div className="suggestion-date">
-          <Regular14px19px text={`${date} - ${time}`} />
-            
-        
+          <Text
+            label={`${date} - ${time}`}
+            weight={"regular"}
+            lineheight={"l19"}
+            size={"h2"}
+          />
         </div>
         <div className="suggestion-title">
-          <Bold18px24px text={title}/>
+          <Text label={title} weight={"bold"} lineheight={"l24"} size={"h3"} />
         </div>
       </div>
-      <button className="suggestion-button"><Regular16px22px text={"Tickets"}/></button>
+      <button className="suggestion-button">
+        <Text
+          label={"Tickets"}
+          weight={"regular"}
+          lineheight={"l22"}
+          size={"h2"}
+        />
+      </button>
       {/* <img src={backgroundpath} alt="Suggestion Background" className='suggestion-bg' /> */}
     </div>
   );
