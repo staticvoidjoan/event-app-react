@@ -1,7 +1,21 @@
-import React from "react";
+import React, {useState , useEffect} from "react";
 import "./EventCards.css";
 import Text from "./text/Text";
 const EventCard = ({ date, title, info, backgroundpath, month, price }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth > 1000);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth > 1000);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const cardStyle = {
     backgroundImage: `url(${backgroundpath})`,
   };
@@ -36,7 +50,7 @@ const EventCard = ({ date, title, info, backgroundpath, month, price }) => {
         <div className="info-box">
           <div className="info-text">
             <div style={{ marginBottom: "8px" }}>
-              <Text label={title} weight={"medium"} lineheight={"l24"} size={"h3"} />
+              <Text label={title} weight={isSmallScreen ? "bold" : "medium"} lineheight={"l24"} size={"h3"} />
             </div>
             <div>
               <Text label={info} weight={"regular"} lineheight={"l22"} size={"h2"} />

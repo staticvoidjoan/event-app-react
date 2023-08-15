@@ -382,6 +382,7 @@
   }
   .event-date-day{
     margin-right: 8px;
+    font-weight: normal !important;
   }
 
   .calendar-day{
