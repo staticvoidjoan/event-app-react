@@ -1,6 +1,6 @@
 import React from "react";
 import "./Event.css";
-import Text from "../../components/Text Components/Text";
+import Text from "../../components/text/Text";
 export default function EventHeader({ title, price }) {
   return (
     <div className="event-title-price">

@@ -1,6 +1,6 @@
 import React from "react";
 import "./SuggestedCard.css";
-import Text from "./Text Components/Text";
+import Text from "./text/Text";
 const SuggestedCard = ({ date, time, title, backgroundpath }) => {
   const cardStyle = {
     backgroundImage: `url(${backgroundpath})`,

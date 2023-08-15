@@ -1,6 +1,6 @@
 import React from 'react'
 import locationicon from "../../assets/location.svg"
-import Text from '../../components/Text Components/Text'
+import Text from '../../components/text/Text'
 export default function EventLocation({city,country}) {
   return (
     <div className="event-location">

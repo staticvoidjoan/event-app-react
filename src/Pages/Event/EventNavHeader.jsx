@@ -1,6 +1,6 @@
 import React from "react";
 import backico from "../../assets/back.svg";
-import Text from "../../components/Text Components/Text";
+import Text from "../../components/text/Text";
 export default function EventNavHeader({ title }) {
   return (
     <div className="event-title">

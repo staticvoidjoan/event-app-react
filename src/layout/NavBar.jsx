@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import profilepic from "../assets/profilepic.jpg";
-import Text from "../components/Text Components/Text";
+import Text from "../components/text/Text";
 const NavBar = () => {
   return (
     <header>

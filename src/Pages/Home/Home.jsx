@@ -9,7 +9,7 @@ import AllButton from "../../components/AllButton";
 import EventCard from "../../components/EventCard";
 
 //Text Components
-import Text from "../../components/Text Components/Text";
+import Text from "../../components/text/Text";
 import {
   allButtonsData,
   suggestedCardsData,

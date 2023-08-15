@@ -1,9 +1,6 @@
 import React from "react";
 import TicketButton from "./TicketButton";
-import Bold16px22px from "../../components/Text Components/bold16px22px";
-import Regular16px22px from "../../components/Text Components/regular16px22px";
-
-import Text from "../../components/Text Components/Text";
+import Text from "../../components/text/Text";
 
 const EventInfo = ({ title, info }) => {
   return (

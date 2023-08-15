@@ -1,6 +1,6 @@
 import React from 'react';
 import ticketico from "../../assets/ticket.svg";
-import Text from '../../components/Text Components/Text';
+import Text from '../../components/text/Text';
 const EventTicket = ({ticketammount}) => {
     return (
         <div className="event-ticket">

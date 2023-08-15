@@ -1,6 +1,6 @@
 import React from "react";
 import "./EventCards.css";
-import Text from "./Text Components/Text";
+import Text from "./text/Text";
 const EventCard = ({ date, title, info, backgroundpath, month, price }) => {
   const cardStyle = {
     backgroundImage: `url(${backgroundpath})`,

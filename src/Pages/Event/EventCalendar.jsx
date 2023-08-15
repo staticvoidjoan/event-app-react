@@ -1,6 +1,6 @@
 import React from "react";
 import calendaricon from "../../assets/calendar.svg";
-import Text from "../../components/Text Components/Text";
+import Text from "../../components/text/Text";
 
 const EventCalendar = ({ date, month, time, weekday }) => {
   return (
